@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="assignment_3.css" rel="stylesheet">
+    <title>Laboration 11</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Min filmlista</h1>
+        <form id="add-movie-form">
+            <fieldset>
+                <legend>Lägg till en film</legend>
+
+                <label for="title-field">Titel:</label>
+                <input type="text" id="title-field" class="form-control">
+
+                <label for="rating-field">Betyg:</label>
+
+                <select type="text" id="rating-field" class="form-control">
+                    <option value="0">Välj betyg här...</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+
+                <input type="submit" class="btn btn-success mt-3" value="Spara film">
+
+            </fieldset>
+        </form>
+
+        <hr>
+
+        <h2>Filmer</h2>
+
+        <ul id="movies">
+
+        </ul>
+
+    </div>
+
+    <!-- Metod 2: Inkludera jQuery online-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!-- Din egen kod -->
+    <script src="assignment_3.js"></script>
+</body>
+
+</html>
